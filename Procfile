@@ -1,1 +1,1 @@
-web: bin/hubot --adapter campfire --name peon --alias
+web: bin/hubot --adapter campfire --name peon
