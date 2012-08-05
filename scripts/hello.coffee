@@ -18,7 +18,7 @@ module.exports = (robot) ->
 
 
     hello = [
-      "#person, vassup?"
+      "#{person}, vassup?"
       "Damn #{person}, where have you been?"
       "Captain on thie deck."
       "who the f*ck let #{person} in?"
