@@ -26,11 +26,6 @@ farewell = [
 ]
 
 module.exports = (robot) ->
-  robot.hear /has entered the room/i, (msg) ->
-    msg.send msg.random hellos
-
-
-module.exports = (robot) ->
   robot.enter (response) ->
     person = response.message.user.name
 
