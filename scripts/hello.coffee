@@ -20,9 +20,9 @@ module.exports = (robot) ->
     hello = [
       "#person, vassup?"
       "Damn #{person}, where have you been?"
-      "Captain on the deck."
+      "Captain on thie deck."
       "who the f*ck let #{person} in?"
-      "the #{person} has come back to this chatroom..."
+      "#{person} has come back to this chatroom..."
       "uh-oh it's '#{person}. The neighborhood has gone south already"
       "Hide the silverware, it's #{person}'"
     ]
@@ -37,9 +37,9 @@ module.exports = (robot) ->
       "Finally, best news I've heard all day."
       "Even after leaving, the stench of #{person} lingers..."
       "I thought #{person} would never leave"
-      "And with #{person} absence, peace & prosperity spread throughout the land. It was as if a dark black curse had been lifted off."
+      "And with #{person}'s absence, peace & prosperity spread throughout the land. It was as if a dark black curse had been lifted off that day."
       "I'm pretty glad that #{person} left, it was getting a little awkward in here."
     ]
-    
+
     msg.send msg.random farewell
 
