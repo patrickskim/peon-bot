@@ -18,7 +18,6 @@ hello = [
   "Damn #{person}, where have you been?"
   "Captain on the deck."
   "who the f*ck let #{person} in?"
-  "/play bueller"
   "the #{person} has come back to this chatroom..."
   "uh-oh it's '#{person}. The neighborhood has gone south already"
   "Hide the silverware, it's #{person}'"
@@ -33,12 +32,12 @@ farewell = [
   "I'm pretty glad that #{person} left, it was getting a little awkward in here."
 ]
 
-module.exports = (robot) ->
-  robot.enter (msg) ->
+module.exports = (robot) =>
+  robot.enter (msg) =>
     person = msg.message.user.name
     msg.send msg.random hello
 
-  robot.leave (msg) ->
+  robot.leave (msg) =>
     person = msg.message.user.name
     msg.send msg.random farewell
 
