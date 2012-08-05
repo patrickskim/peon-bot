@@ -26,12 +26,11 @@ farewell = [
 ]
 
 module.exports = (robot) ->
-  robot.enter (response) ->
-    person = response.message.user.name
-
+  robot.enter (msg) ->
+    person = msg.message.user.name
     msg.send msg.random hello
 
-  robot.leave (response) ->
-    person = response.message.user.name
+  robot.leave (msg) ->
+    person = msg.message.user.name
     msg.send msg.random farewell
 
